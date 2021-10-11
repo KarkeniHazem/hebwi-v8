@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.login-screen {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("");
+  background-color: black;
+  
+}
+.login-container {
+  width: 96%;
+  margin: auto;
+  
+ 
+}
+
+.logo {
+  padding-top: 2%;
+  color: white;
+}
+.login-form {
+  width:400px;
+  background-color: #f9f9f9;
+  margin: auto;
+  padding: 1.2em;
+  border-radius: 4px;
+}
+.login-form h2 {
+  display: flex;
+  justify-content: center;
+  padding: 7vh;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.formy {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.login-form >*{
+  text-decoration: none;
+}
+.formy input {
+  width: 100%;
+  margin: auto;
+  height: 8vh;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+ background-color:#f9f9f9 ;
+  
+}
+.socila-media-img {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 40px;
+}
+.socila-media-img > *{
+  width: 47%;
+  border-radius: 8px;
+  background-color: rgb(212, 212, 212);
+  border: none;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.socila-media-img button:first-child{
+  color: blue;
+}
+.socila-media-img button:first-child:hover{
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+.socila-media-img button:last-child{
+  color: rgb(168, 26, 16);
+}
+.socila-media-img button:last-child:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(168, 26, 16);;
+}
+
+.email-label{
+  position: absolute ;
+  top: 22.5%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.pwd-label{
+  position: absolute ;
+  top: 71%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+input:focus + label, input:not(:placeholder-shown) + label{
+  transform: translateY(-1.5em)scale(0.8);
+}
+input::placeholder{
+  color: transparent;
+}
+
+
+.sign-in-btn{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  border-radius: 8px;
+  background-color: rgb(212, 212, 212);
+  margin: 0 auto;
+  margin-top: 40px;
+  color: white;
+  
+}
+.sign-up-btn{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  border-radius: 8px;
+  background-color: rgb(212, 212, 212);
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+}
+.sign-up-btn:hover{
+  background-color: black;
+  color: white;
+  transition-duration: .3s;
+  }
+.sign-in-btn:hover{
+background-color: black;
+color: white;
+transition-duration: .3s;
+}
+
+
+.form-switch{
+  display: flex;
+  font-size: 0.8em;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+
+
+}
+.form-switch> *{
+ padding :  0 10px;
+}
+
+.forme-switch{
+  display: flex;
+  font-size: 0.8em;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+.forme-switch> *{
+  padding :  0 10px;
+}
+
+.Name{
+  display: flex;
+  justify-content: space-between;
+}
+.Name input{
+  width: 35%;
+  margin-right: 20%;
+
+}
+.name-label{
+  position: absolute ;
+ 
+  top: 11%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.lastName-label{
+  position: absolute ;
+  left: 50%;
+  top: 11%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.emaill-label{
+  position: absolute ;
+  left: 0;
+  top: 36%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.phone-label{
+  position: absolute ;
+  left: 0;
+  top: 61%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.pass-label{
+  position: absolute ;
+  left: 0;
+  top: 86%;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+
+}
+.login-form h3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  .login-form {
+   width: 90%;
+  }
+}
